@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagenes/fgh.PNG);
+    background-repeat: no-repeat; background-position: center center;
+}
+
+#general {
+    text-align: center;
+    border: 4px solid  orange;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 700px;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 15px;
+   
+}
+.divs {
+    display: flex;
+    
+    display: inline-block;
+    
+    border: 0px solid orangered;
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    min-width: 250px;
+}
+.divgenerales {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+}
+.labelgenerales {
+    
+    
+    color: #EF6C00;
+    font-size: 19px;
+    margin: opx 30px;
+    float: left;
+    margin-left: 150px;
+    width: 170px;
+}
+#div1{
+    margin-top: 25px;
+}
+.inputgenerales {
+    
+    border: 2px solid orange;
+    height: 70%;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-align: center;
+    color: orange;
+    float: left;
+    margin-left: 20px;
+}
+#labelex{
+    color: #EF6C00;
+    font-size: 19px;
+    margin: 0px 30px;
+    float: left;
+    margin-left: 20px;
+    width: 170px;
+}
+#labelmal {
+    color: #EF6C00;
+    font-size: 19px;
+    margin: 0px 30px;
+    float: left;
+    margin-left: 150px;
+    width: 170px;  
+}
+.divv {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    
+}
+.inputt{
+    border: 2px solid orange;
+    height: 80%;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-align: center;
+    color: orange;
+    width: 65%;
+    
+}
+.labell{
+    color: #EF6C00;
+    font-size: 13px;
+    margin: 0px 30px;
+    
+    width: auto;
+}
+#generaltablas {
+    text-align: center;
+    border: 4px solid  orange;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 800px;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 95px;
+   
+}
+.labelgeneralestablas {
+    
+    
+    color: #EF6C00;
+    font-size: 25px;
+    margin: 5px 30px;
+    
+    width: auto;
+}
+.labelgeneralesultimo {
+    
+    
+    color: #EF6C00;
+    font-size: 19px;
+    
+    float: left;
+    margin-left: 380px;
+    width: 100px;
+}
+#generaltablasEx {
+    text-align: center;
+    border: 4px solid  orange;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 1110px;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 95px;
+   
+}
+

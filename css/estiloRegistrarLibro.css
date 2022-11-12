@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagenes/fgh.PNG);
+    background-repeat: no-repeat; background-position: center center;
+}
+
+#general {
+    text-align: center;
+    border: 4px solid  orange;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 700px;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 15px;
+   
+}
+
+.divs {
+    display: flex;
+    
+    display: inline-block;
+    
+    border: 0px solid orangered;
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    min-width: 250px;
+}
+#divab label {
+    font-size: 22px;
+    color: orange;
+    margin: 10px 5px;
+    border: 0px solid orange;
+}
+#divab input {
+    text-decoration-color: orangered;
+    color: orange;
+    margin: 10px 10px;
+    border: 2px solid orange;
+}
+
+.todoab {
+    display: flex;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px;
+}
+.divfooter {
+    display: inline-block;
+}
+.divgenerales {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+}
+.labelgenerales {
+    
+    
+    color: #ff9900;
+    font-size: 19px;
+    margin: opx 30px;
+    float: left;
+    margin-left: 150px;
+    width: 170px;
+}
+.btonesgenerales {
+    background-color: orange;
+    color: white;
+    height: 80%;
+    width: 120px;
+    margin: 6px 15px;
+    
+    border-radius: 8px;
+    border: 3px solid white;
+}
+.inputgenerales {
+    
+    border: 2px solid orange;
+    height: 70%;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-align: center;
+    color: orange;
+    float: left;
+    margin-left: 20px;
+}
+#div1{
+    margin-top: 25px;
+}
+#labelex{
+    color: #EF6C00;
+    font-size: 19px;
+    margin: opx 30px;
+    float: left;
+    margin-left: 20px;
+    width: 170px;
+}

@@ -1,0 +1,58 @@
+.fondo{
+    background-image: url(imagenes/fgh.PNG);
+    background-position: center center;
+    background-repeat: no-repeat; background-position: center center;
+}
+.ab{
+    width: 300px;
+    background-color: blue;
+}
+#as{
+    background-color: blue;
+}
+
+.fondodegradado{
+    background-color: #FFe259 ;
+    background: linear-gradient(to right,#FF8C00, #FFe259); 
+}
+.botondegradado{
+    background-color: #FFC100 ;
+    background: linear-gradient(to right,#FFC100, #FFFFFF); 
+}
+.botones{
+    background-color: #FF8C00 !important ;
+    color: white !important;
+    border-color: white !important;
+}
+.containerH{
+    border: 5px solid white !important;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-top-left-radius: 8px 8px;
+
+}
+.var{
+    height: 60px !important;
+}
+.flotante{
+    justify-content: center;
+    align-items: center;
+    position:fixed; 
+    top: 340px; right:20px;
+    width: 200px;
+    height: 240px;
+}
+.labels{
+    color: black;
+    background-color: #FF8C00;
+    font-size: 30px;
+    align-items: center;
+    margin-left: 60px;
+    border: 7px solid #FF8C00;
+    border-radius: 10px;
+}
+.ima{
+    width: 200px;
+    height: 200px;
+}
