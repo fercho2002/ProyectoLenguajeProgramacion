@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../css/generales.css">
 </head>
 <body>
-
+<?php   
+        include_once("../modelo/mdTablas.php");
+        $modelo = new mdTablas();
+        $tab = $modelo->tablaLibrosPrestados();
+      ?>
 <content>
 
       <form id="generaltablas" >	 	
@@ -20,11 +24,35 @@
               <label class="labelgeneralestablas  ">Libros Prestados</label>
             </div>
             <div >
-                <button type="submit" class="btn btn-warning botones "  value="buscar" style="margin: 10px 20px;" >Actualizar</button>
+                <button type="submit" class="btn btn-warning botones " name="fboton" value="buscar" style="margin: 10px 20px;" onclick="document.location.reload();">Actualizar</button>
           </div >
             <table class="table">
-  
-          </table>  
+  <thead>
+    <tr>
+      
+      <th scope="col">Id Libro</th>
+      <th scope="col">Nombre Libro</th>
+      <th scope="col">ID Usuario</th>
+      <th scope="col">Fecha De Prestamo</th>
+      <th scope="col">Fecha De Entregado</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php  
+            while($resultado=mysqli_fetch_array($tab)){
+      ?>
+    <tr>
+     
+      <td><?php echo $resultado['idlibro'] ?></td>
+      <td><?php echo $resultado['nombrelibro'] ?></td>
+      <td><?php echo $resultado['idusuariopre'] ?></td>
+      <td><?php echo $resultado['fechadeprestamo'] ?></td>
+      <td><?php echo $resultado['fechadeentregado'] ?></td>
+    </tr>
+    <?php } ?>
+   
+  </tbody>
+</table>  
           </div>
 
           

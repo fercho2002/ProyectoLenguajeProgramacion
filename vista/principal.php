@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="../css/hoja.css" >
 </head>
 <body>
- 
+  <?php 
+  session_start();
+  @$nom = $_SESSION["nombre"];
+  ?>
 <nav class="navbar navbar-expand-lg navbar-light fondodegradado " >
       <form action="cerrarsesion.php" method="post">
               <div class="container-fluid">
@@ -71,7 +74,7 @@
                     
                   </ul>
                   
-                  <button class="btn btn-outline-success" type="submit" >Cerrar Seccion</button>
+                  <button class="btn btn-outline-success" type="submit"  name="fbtn" value="cerrar">Cerrar Seccion</button>
                
 
                 </div>
@@ -84,7 +87,7 @@
         </form>
         <div class="flotante">
           <img class="ima" src="../imagenes/icono.png">
-        <label class="labels"></label>
+        <label class="labels" ><?php echo $nom ?></label>
 </div>
   </nav>
   <script src="../boodstrap/bootstrap.bundle.js"></script>  

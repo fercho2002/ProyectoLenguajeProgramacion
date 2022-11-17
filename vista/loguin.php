@@ -17,22 +17,30 @@
                <div class="row  ">
                    
 
-                   <h4 class="fw-bold  text-center py-4">Bienvenido a Biblioteca</h4>
+                   <h4 class="fw-bold  text-center py-4">Bienvenido a Biblioteca UNINPAHU</h4>
 
-                   <form >
+                   <form action="../controlador/Controlador.php" method="post">
                        <div class="mb-2">
                            <label for="email" class="form-label">Correo Electronico</label>
-                           <input type="email" class="form-control" > 
+                           <input type="email" class="form-control" name="femail"> 
                        </div>
                        <div class="mb-2">
                            <label for="password" class="form-label">Contraseña</label>
-                           <input type="password" place class="form-control" > 
+                           <input type="password" place class="form-control" name="fcontraseña"> 
                        </div>
                        <div class="d-grid">
-                           <button type="submit" class="btn btn-primary botones" >Iniciar Sesion</button>
+                           <button type="submit" class="btn btn-primary botones" name="fboton" value="ingresar">Iniciar Sesion</button>
                        </div>
                    </form>
-                   
+                   <?php
+                    @$mensaje = $_GET['mensaje'];
+                    if (isset($mensaje)){
+                    if($mensaje=='incorrecto'){
+                            echo '<div  class="alert alert-danger" role="alert"> usuario o clave incorrecto</div>';
+                        }
+
+                    }
+                    ?>
                </div>
                <div class="row mt-4 " >
                    <img src="../imagenes/fgh.PNG" width="200" >

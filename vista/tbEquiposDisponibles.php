@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../css/generales.css">
 </head>
 <body>
-
+<?php   
+        include_once("../modelo/mdTablas.php");
+        $modelo = new mdTablas();
+        $tab = $modelo->tablaEquiposDisponibles();
+      ?>
 <content>
 
       <form id="generaltablas" >	 	
@@ -21,8 +25,30 @@
             </div>
             
             <table class="table">
- 
-            </table>  
+  <thead>
+    <tr>
+      
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Serial Equipo</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php  
+            while($resultado=mysqli_fetch_array($tab)){
+            
+      ?>
+    <tr>
+     
+      <td><?php echo $resultado['marca'] ?></td>
+      <td><?php echo $resultado['modelo'] ?></td>
+      <td><?php echo $resultado['serialequipo'] ?></td>
+      
+    </tr>
+    <?php  } ?>
+   
+  </tbody>
+</table>  
           </div>
 
           
